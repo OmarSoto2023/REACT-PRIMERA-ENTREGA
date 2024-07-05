@@ -1,0 +1,185 @@
+
+.item-list-container {
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .filters button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filters button.active {
+    background-color: #45a049;
+  }
+  
+  .filters button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .search {
+    margin-bottom: 20px;
+  }
+  
+  .search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+
+
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card:hover .card-text {
+    animation: blink 1s infinite; 
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+      color: #FF5722;
+      font-weight: bold; 
+    }
+    50% {
+      opacity: 0;
+      color: #FFC107; 
+      font-weight: normal; 
+    }
+  }
+  
+  
+
+  .no-results-message {
+    font-size: 29px; /* Tamaño de fuente grande */
+    color: #555; /* Color de texto oscuro */
+    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
+    width: 400px;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .card-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-buttons button.add-to-cart {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .card-buttons button.view-details {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .card-buttons button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .card-buttons button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .card-buttons button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .card-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-buttons .view-details-link {
+    display: block;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .card-buttons .view-details-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
